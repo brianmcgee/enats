@@ -1,0 +1,7 @@
+.idea
+
+/data
+/result
+
+.envrc.local
+nix/services/clients.json
