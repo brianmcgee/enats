@@ -1,0 +1,13 @@
+name: Nix flake check
+on:
+  push:
+  pull_request:
+
+jobs:
+  flake-check:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Nix
+        uses: JRMurr/direnv-nix-action@v4.1.0
+      - run: nix flake check --show-trace
