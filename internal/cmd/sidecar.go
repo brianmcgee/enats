@@ -15,7 +15,7 @@ type sidecarCmd struct {
 	DataDir        string   `name:"data-dir" env:"DATA_DIR" default:"./data" help:"Directory where the sidecar will store data about the client it is connected to.'"`
 	RpcPrefix      string   `name:"rpc-prefix" env:"RPC_PREFIX" default:"web3.rpc.request" help:"Subject prefix for the JSON RPC handler."`
 	RpcDenyList    []string `name:"rpc-deny-list" env:"RPC_DENY_LIST" default:"admin_.*" help:"A list of regex expressions used to determine which rpc calls to deny."`
-	RpcHistorySize int      `name:"rpc-history-size" env:"RPC_HISTORY_SIZE" default:"7200" help:"Number of blocks worth of data to make available."`
+	RpcHistorySize int      `name:"rpc-history-size" env:"RPC_HISTORY_SIZE" default:"128" help:"Number of blocks worth of data to make available."`
 }
 
 func (cmd *sidecarCmd) toOptions() ([]sidecar.Option, error) {
