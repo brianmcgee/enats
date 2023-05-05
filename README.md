@@ -59,7 +59,7 @@ $ nats request --replies 10 web3.rpc.request.31337.31337 -H method:eth_blockNumb
 To send a json rpc request to a sidecar that has block data for network `31337`, chain `31337` and block number `0x256`:
 
 ```terminal
-$ nats request --inbox-prefix web3.rpc.response --replies 10 web3.rpc.request.31337.31337.number.256 -H method:eth_getBlockByNumber '["0x256", false]'
+$ nats request --replies 10 web3.rpc.request.31337.31337.number.256 -H method:eth_getBlockByNumber '["0x256", false]'
 10:16:24 Sending request on "web3.rpc.request.31337.31337.number.256"
 10:16:24 Received with rtt 602.286µs
 10:16:24 clientSubject: web3.rpc.request.31337.31337.client.anvil
@@ -71,7 +71,7 @@ $ nats request --inbox-prefix web3.rpc.response --replies 10 web3.rpc.request.31
 To send a json rpc request to a sidecar that has block data for network `31337`, chain `31337` and block hash `88911d2f3ae12d067b662120f045b958a53dfbb2f877c6be488fe28bca71bf6f`:
 
 ```terminal
-$ nats request --inbox-prefix web3.rpc.response --replies 10 web3.rpc.request.31337.31337.hash.88911d2f3ae12d067b662120f045b958a53dfbb2f877c6be488fe28bca71bf6f -H method:eth_getBlockByHash '["0x88911d2f3ae12d067b662120f045b958a53dfbb2f877c6be488fe28bca71bf6f", false]'
+$ nats request --replies 10 web3.rpc.request.31337.31337.hash.88911d2f3ae12d067b662120f045b958a53dfbb2f877c6be488fe28bca71bf6f -H method:eth_getBlockByHash '["0x88911d2f3ae12d067b662120f045b958a53dfbb2f877c6be488fe28bca71bf6f", false]'
 10:18:35 Sending request on "web3.rpc.request.31337.31337.hash.88911d2f3ae12d067b662120f045b958a53dfbb2f877c6be488fe28bca71bf6f"
 10:18:35 Received with rtt 532.336µs
 10:18:35 clientVersion: anvil/v0.1.0
