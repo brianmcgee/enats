@@ -1,7 +1,7 @@
 # ENATS - Ethereum NATS
 
 ![Build](https://github.com/brianmcgee/enats/actions/workflows/check-flake.yml/badge.svg)
-![License: Apache 2](https://img.shields.io/badge/License-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![License: Apache 2](https://img.shields.io/badge/License-Apache%202-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 Status: _EXPERIMENTAL_
 
