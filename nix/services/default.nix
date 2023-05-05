@@ -17,7 +17,7 @@
         config = ./nats.conf;
       in {
         nats.command = "${lib.getExe pkgs.nats-server} -c ${config}";
-        anvil.command = "${foundry}/bin/anvil --block-time 1";
+        anvil.command = "${foundry}/bin/anvil --block-time 12";
       };
     };
 
